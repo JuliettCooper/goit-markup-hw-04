@@ -33,7 +33,11 @@ h1, h2, h3, h4, h5, h6, p {
 /* -------HEADER------- */
 
 .header {
-border-bottom: 1px solid #e7e9fc
+border-bottom: 1px solid #e7e9fc;
+box-shadow:
+        0px 2px 1px rgba(46, 47, 66, 0.08),
+        0px 1px 1px rgba(46, 47, 66, 0.16),
+        0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .header .container {
@@ -79,6 +83,8 @@ nav ul li {
 .header-menu-link {
     padding: 24px 0;
     display: block;
+    position: relative;
+    color: #404bbf;
 }
 
 .header-menu-item {
@@ -250,12 +256,17 @@ ul, ol {
 .team-list {
     display: flex;
     gap: 24px;
+    justify-content: center;
 }
 
 .team-item {
     background-color: #FFFFFF;
     width: calc((100% - 72px) / 4);
     border-radius: 0px 0px 4px 4px;
+    box-shadow: 
+        0px 1px 6px rgba(46, 47, 66, 0.08),
+        0px 1px 1px rgba(46, 47, 66, 0.16),
+        0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .name-spec {
@@ -285,11 +296,13 @@ ul, ol {
 .icon-list {
     display: flex;
     gap: 24px;
+    justify-content: center;
 }
 
 .icon-item {
     width: 40px;
     height: 40px;
+    background-color: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-link {
@@ -298,9 +311,18 @@ ul, ol {
     background-color: #4d5ae5;
     border-radius: 50%;
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.icon-icon {}
+.icon-link:hover,
+.icon-link:focus {
+    background-color: #404bbf;
+}
+
+.icon-icon {
+    fill: #f4f4fd;
+}
 
 /* ----------------------- */
 
