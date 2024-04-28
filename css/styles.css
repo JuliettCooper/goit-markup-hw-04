@@ -455,8 +455,11 @@ border-top: none;
 
 .footer-div {
 margin-right: 120px;
+}
+
+.footer-container {
 display: flex;
-align-items: baseline;
+align-items: baseline,
 }
 
 .footer-logo {
