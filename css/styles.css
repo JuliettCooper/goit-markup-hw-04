@@ -176,7 +176,7 @@ ul, ol {
     linear-gradient(
         rgba(46, 47, 66, 0.7), 
         rgba(46, 47, 66, 0.7)), 
-        url(../images/people-office\ 1.jpg);
+        url(../images/people-office.jpg);
 }
 
 .solutions-title {
@@ -455,7 +455,8 @@ border-top: none;
 
 .footer-div {
 margin-right: 120px;
-
+display: flex;
+align-items: baseline;
 }
 
 .footer-logo {
